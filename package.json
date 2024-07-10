@@ -1,0 +1,40 @@
+{
+  "name": "layout",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "pro": "vite --mode production",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only:dev": "vite build --mode development",
+    "build-only:pro": "vite build --mode production",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "element-plus": "^2.7.6",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.14.9",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/tsconfig": "^0.5.1",
+    "@vueuse/core": "^10.11.0",
+    "npm-run-all2": "^6.2.0",
+    "typescript": "~5.4.0",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-element-plus": "^0.8.0",
+    "unplugin-icons": "^0.19.0",
+    "unplugin-vue-components": "^0.27.2",
+    "vite": "^5.3.1",
+    "vite-plugin-inspect": "^0.8.4",
+    "vue-tsc": "^2.0.21"
+  }
+}
